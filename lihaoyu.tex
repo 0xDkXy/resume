@@ -1,0 +1,267 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+%\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingWork}[5]{
+  \vspace{-5pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}\hspace{10pt}\textit{\small#2} & #3 \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-5pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeAwardItemTwoLine}[4]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+\newcommand{\resumeAwardItemOneLine}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & \textit{#2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+%\newcommand{\resumeAwardItem}[2]{
+%  \vspace{-1pt}\item
+%    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%      \textbf{#1} & #2 
+%    \end{tabular*}\vspace{-5pt}
+%}
+
+
+\newcommand{\resumeItemOneLine}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubLineItem}[2]{\resumeItem{#1} & #2\vspace{-4pt}}
+\newcommand{\pubItem}[1]{\vspace{-1pt}\item #1\vspace{-5pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://0xdkxy.github.io}{\Large  Haoyu Li}} & Email : \href{mailto:lowell@0xdkxy.com}{lowell@0xdkxy.com}\\
+    \href{https://github.com/0xDkXy}{https://github.com/0xDkXy} & Mobile : \href{tel:+8613257310943}{+86-132-5731-0943} \\
+\end{tabular*}
+
+%-----------RESEARCH INTEREST-----------------
+\section{Research Interest}
+    \resumeSubHeadingListStart
+        \resumeSubItem{Operating System, Computer Architecture, System Security}
+        {\newline Use the software and hardware co-design methodology to complement each other to build a faster, more secure, and more robust system. }
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \vspace{4pt}\resumeSubHeadingListStart
+%    \resumeSubheading
+%      {Georgia Institute of Technology}{Atlanta, GA}
+%      {Master of Science in Computer Science;  GPA: 4.00}{Aug. 2012 -- Dec. 2013}
+    \resumeSubheading
+      {Central South University}{Changsha, China}
+      {Bachelor of Engineering in Computer Science and Technology}{Aug. 2019 -- July. 2023}
+      % \resumeItemListStart
+      %   \resumeItem{courses}{Computer Composition Principle and Assembly, Data
+      %   Structure, Algorithm, Computer Architecture, Principle of Operating
+      %   System, etc}
+      % \resumeItemListEnd    
+  \resumeSubHeadingListEnd
+
+%------------Honor And Award---------
+\section{Honor and Award}
+    \resumeSubHeadingListStart
+        \resumeAwardItemTwoLine{The 2020 ICPC Asia Shenyang Regional Contest Silver Medal}{Shenyang, CN}
+        {The 2020 International Collegiate Programming Contest}{July. 2021}
+        \resumeAwardItemTwoLine{The 2021 ICPC Asia Shanghai Regional Contest Bronze Medel}{Shanghai, CN}
+        {The 2021 International Collegiate Programming Contest}{Nov. 2021}
+        \resumeAwardItemTwoLine{The 2021 ICPC Asia Shenyang Regional Contest Bronze Medel}{Shenyang, CN}
+        {The 2021 International Collegiate Programming Contest}{Nov. 2021}
+        \resumeAwardItemTwoLine{The 2021 CCPC - National Invitational Contest(Hunan) Silver Medal}{Xiangtan, CN}
+        {The 2021 China Collegiate Programming Contest}{Jun. 2021}
+        \resumeAwardItemOneLine{The 2021 Baidu Astar Programming Contest Rank 245/23051}{Aug. 2021}
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/0xdkxy/AOS}{AOS}}
+      {It is a self-made OS kernel based on i386 architecture. It supports multithreading, user programs, file systems, basic I/O, memory management, and a simple shell.}
+    \resumeSubItem{\href{https://github.com/0xdkxy/A-1-reliable-TCP-skeleton}{Reliable TCP}}
+      {A TCP protocol simulation, reliable because it's based on the existing TCP in your machine. It is like a virtual layer on the real TCP/IP layer.}
+  \resumeSubHeadingListEnd
+
+
+%-----------WORKING EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \vspace{4pt}\resumeSubheadingWork
+      {ByteDance}{data-arch-IES}{Shanghai, CN}
+      {Software Engineer Intern}{Feb 2022 - July 2022}
+      \resumeItemListStart
+          \vspace{5pt}{I refined real-time data from Douyin and TikTok using the VCP framework, a specialized version of Apache Flink. My responsibilities included developing data pipelines, enhancing workflows, scaling streaming solutions, and monitoring their performance.}
+      \resumeItemListEnd
+      
+    \resumeSubheadingWork
+      {Tencent}{IEG-start}{Shenzhen, CN}
+      {Game Development Engineer Intern}{July 2022 - Aug 2022}
+      \resumeItemListStart
+        \vspace{5pt}{I focused on optimizing computer graphics models to enhance the gaming experience. This role involved refining and improving visuals and performance.}
+      \resumeItemListEnd
+      
+        \resumeSubheading
+        {CSUVAG}{Changsha, CN}
+        {Research Assistant Intern, Advisor: Jiazhi Xia}{Aug 2022 - Jun 2023}
+        \resumeItemListStart
+            \vspace{5pt}{I completed my bachelor's thesis under Prof. Jiazhi Xia at CSUVAG, concentrating on information visualization, especially in high-dimensional and large-scale data.}
+            \resumeItem{Parametric-DR}
+            {In the "DRs" project, we used deep metric and manifold learning to create smooth intermediate states, clarifying how the manifold folds and unfolds.}
+        \resumeItemListEnd
+
+        \resumeSubheading
+        {Aurora}{Changsha, CN}
+        {Group Member}{Aug 2020 - Jun 2023}
+        \resumeItemListStart
+                \vspace{5pt}{Aurora is the CTF team and Security Lab of the School of Computer Science and Engineering at Central South University. I participated in multiple CTF contests as a cryptographer with teammates.}
+        \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE--------
+%\section{Research Experience}
+%    \resumeSubHeadingListStart
+%        \resumeSubheading
+%            {CSUVAG}{Changsha, CN}
+%            {Research Assistant Intern, Advisor: Jiazhi Xia}{Aug 2022 - Jun 2023}
+%            \resumeItemListStart
+%                \vspace{5pt}{I successfully completed my bachelor's thesis under the guidance of Professor Jiazhi Xia at CSUVAG. My research at CSUVAG primarily revolved around information visualization, with a specific focus on high-dimensional and large-scale data visualization. This experience provided me with valuable insights into the complexities of visualizing vast and intricate datasets, and I actively contributed to advancing the field of information visualization during my time at the institution.}
+%                \resumeItem{Parametric-DR}
+%                {In the project "DRs," deep metric learning and manifold learning techniques were employed to generate a series of smooth intermediate states, enhancing users' comprehension of how the manifold folds and unfolds. My contributions to this project encompassed the design and execution of a portion of the experiments, as well as the composition of a section within the paper's motivating examples. Additionally, my bachelor's thesis constitutes an integral component of this work.}
+%            \resumeItemListEnd
+%        %\resumeSubheading
+%    \resumeSubHeadingListEnd
+
+
+
+%-------------PUBLICATION------------
+%\section{Publication}
+%    \resumeSubHeadingListStart
+%        \pubItem{Pretend I have a pub: balabalabalabala}
+%        \pubItem{Pretend I have another pub: balabalabalabala}
+%    \resumeSubHeadingListEnd
+
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+\section{Programming Skills}
+    \resumeSubHeadingListStart
+        \item {\textbf{Languages}:\space C, C++, Python, Java, Bash, Verilog}
+        \item {\textbf{Technologies}:\space Linux, Git, PyTorch, Flask, Verilator, \LaTeX}
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
